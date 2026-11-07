@@ -3,17 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>UK Medical School UCAT Tracker</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background-color: #f4f4f9; color: #333; }
-        h1 { color: #0066cc; }
-        .card { background: white; padding: 30px; border-radius: 8px; max-width: 500px; margin: 0 auto; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; color: #333; }
+        h1 { text-align: center; color: #0066cc; }
+        p.subtitle { text-align: center; color: #666; margin-bottom: 30px; }
+        .table-container { max-width: 900px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #ddd; }
+        th { background-color: #0066cc; color: white; }
+        tr:hover { background-color: #f1f1f1; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Welcome to My Website!</h1>
-        <p>This page is live on Netlify and backed up on GitHub.</p>
+
+    <h1>UK Medical School UCAT Cutoffs</h1>
+    <p class="subtitle">A custom tracker for UCAT boundaries and competitive scores.</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Medical School</th>
+                    <th>Average UCAT Cutoff</th>
+                    <th>Notes / Band Requirement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Row 1 -->
+                <tr>
+                    <td>University Example A</td>
+                    <td>2850+</td>
+                    <td>Band 1 or 2 required</td>
+                </tr>
+                <!-- Example Row 2 -->
+                <tr>
+                    <td>University Example B</td>
+                    <td>2700+</td>
+                    <td>Holistic scoring used</td>
+                </tr>
+                <!-- Add more rows as you fill in your data -->
+            </tbody>
+        </table>
     </div>
+
 </body>
 </html>
